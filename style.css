@@ -1,0 +1,243 @@
+body{
+    background-color: #f3f3f3 !important;
+    font-family: "Bricolage Grotesque", serif !important;
+    font-optical-sizing: auto !important;
+
+    font-style: normal !important;
+    font-variation-settings:
+      "wdth" 100 !important;
+}
+
+nav.navbar {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 0 0 20px 20px !important;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: black !important;
+  }
+  
+  .navbar-nav {
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+font-weight: 500 !important;
+    color: black !important;
+  }
+  
+  .navbar-nav .nav-link:last-child {
+    margin-right: 0;
+  }
+  
+
+  .btn-primary{
+    background-color: #7834b5 !important;
+    border: none !important;
+    border-radius: 12px !important;
+  }
+  .navbar-brand {
+    font-size: 1.7rem !important;
+    font-weight: bold; 
+    background: linear-gradient(to right, #9370DB, #8A2BE2, #6A5ACD);
+    background-clip: text;
+    color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar-brand:hover {
+    background: linear-gradient(to right, #7B68EE, #6A5ACD, #4B0082);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-link:hover {
+ color: #540f85 !important;
+ transition:  0.3s ease;
+  }
+
+  .d1 {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  margin-top: 70px;
+
+
+
+
+  }
+  .d1 h1{
+    font-size: 4rem !important;
+    font-weight: 800;
+    color: #2b0e44;
+    line-height: 1.4;
+  }
+  .d1 h1 span{
+color: #4B0082;
+    transform: rotate(-4deg) !important;
+    will-change: transform !important;
+    display: inline-block;
+    background-color: #fcfcfc !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+
+  }
+  .d1 h1 span:hover{
+    transform: rotate(0deg) !important;
+   transition: 0.3s ease;
+   transform: scale(1.1) !important;
+
+  }
+  .shape {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    background: #e5ac3a;
+    border-radius: 50%;
+    filter: blur(115px);
+    z-index: -1;
+    top: 26%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .shape1 {
+    position: absolute;
+    width: 800px;
+    height: 300px;
+    background: #9836d5;
+    border-radius: 50%;
+    filter: blur(115px);
+    z-index: -1;
+    top: 26%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+  .parent-container {
+    position: relative; 
+    width: 100%; 
+
+  }
+  /* From Uiverse.io by doniaskima */ 
+.btn-23,
+.btn-23 *,
+.btn-23 :after,
+.btn-23 :before,
+.btn-23:after,
+.btn-23:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-23 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #4b0082;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-top: 20px;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-23:disabled {
+  cursor: default;
+}
+
+.btn-23:-moz-focusring {
+  outline: auto;
+}
+
+.btn-23 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-23 [hidden] {
+  display: none;
+}
+
+.btn-23 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn-23 span {
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.btn-23 .marquee {
+  --spacing: 5em;
+  --start: 0em;
+  --end: 5em;
+  -webkit-animation: marquee 1s linear infinite;
+  animation: marquee 1s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  position: relative;
+  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
+    #fff calc(var(--spacing) * -2) 0;
+}
+
+.btn-23:hover .marquee {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+
+.btn-23:hover .text {
+  opacity: 0;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+    
