@@ -9,15 +9,21 @@ body{
 }
 
 nav.navbar {
-    max-width: 700px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.25) !important;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 0 0 20px 20px !important;
-  }
+  position: fixed; 
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%; 
+  max-width: 700px; 
+  z-index: 1000; 
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 0 0 20px 20px !important;
+ 
+}
   
   .navbar-brand {
     font-weight: bold;
@@ -40,7 +46,7 @@ font-weight: 500 !important;
   
 
   .btn-primary{
-    background-color: #7834b5 !important;
+    background-color: #4b0082 !important;
     border: none !important;
     border-radius: 12px !important;
   }
@@ -74,7 +80,7 @@ font-weight: 500 !important;
     justify-content: center !important;
     align-items: center !important;
     text-align: center !important;
-  margin-top: 70px;
+  margin-top: 100px;
 
 
 
@@ -106,25 +112,25 @@ color: #4B0082;
   }
   .shape {
     position: absolute;
-    width: 800px;
+    width: 50%;
     height: 300px;
     background: #e5ac3a;
     border-radius: 50%;
     filter: blur(115px);
     z-index: -1;
-    top: 26%; 
+    top: 35%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
   }
   .shape1 {
     position: absolute;
-    width: 800px;
+    width: 50%;
     height: 300px;
-    background: #9836d5;
+    background: #c472f7;
     border-radius: 50%;
     filter: blur(115px);
     z-index: -1;
-    top: 26%; 
+    top: 35%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
   }
@@ -240,4 +246,40 @@ color: #4B0082;
   }
 }
 
+    .d1-img img{
+      height: auto !important;
+      width: 100% !important;
+      border-radius: 20px;
+
     
+   
+    }
+    .d1-img{
+      margin-top: 80px;
+      padding: 20px;
+position: relative;
+border-radius: 25px;
+
+background: rgba(240, 239, 241, 0.07);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(240, 239, 241, 0.3);
+    }
+ 
+    .d1-svg {
+      position: relative;
+      right: -10px;
+      margin-top: -55px;
+      transform: scaleX(-1);
+      flex: 0 0 auto; /* Prevent the SVG from stretching */
+      margin-left: 20px; /* Space between image and SVG */
+  }
+  
+  .d1-svg svg {
+      display: block;
+      transform: scaleX(-1);
+      height: auto;
+      object-fit: contain; /* Ensure SVG maintains aspect ratio */
+  }
