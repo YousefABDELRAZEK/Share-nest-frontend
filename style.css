@@ -283,3 +283,170 @@ border: 1px solid rgba(240, 239, 241, 0.3);
       height: auto;
       object-fit: contain; /* Ensure SVG maintains aspect ratio */
   }
+  .d2{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-top: 20px;
+  }
+  .d2 h4{
+    color:#2b0e44 ;
+    padding-bottom: 40px;
+
+  }
+  .d2-brands{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .license-slider {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .license-slider::before,
+  .license-slider::after {
+    background: linear-gradient(to right, #f3f3f3 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .license-slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .license-slider::before {
+    left: 0;
+    top: 0;
+  }
+  .license-slider .license-slider-track {
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: fit-content;
+  }
+  .license-logo img {
+    width: 50px;
+    height: fit-content;
+  }
+  .license-slider .license-logo {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* scroll only 50% */
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media only screen and (max-width: 798px) {
+    .license-slider::before,
+    .license-slider::after {
+        width: 10px;
+    }
+    .license-slider .license-logo {
+        width: 170px;
+    }
+  }
+  .d3{
+    margin-top: 120px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+
+  }
+  .d3 h2{
+    text-align: left !important;
+color: #2b0e44;
+font-weight: 900;
+font-size: 3rem;
+
+  }
+  .d3 .p1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b0082;
+  }
+  .d3 .p2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4b0082;
+  }
+  .d3-main{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+   margin-bottom: 50px;
+    background: #FF7D33;
+  width: 100%;
+  height: auto;
+  box-shadow: 0;
+  border-radius: 16px 0 16px 16px;
+  position: relative;
+  padding: 20px;
+  padding-top: 4.85714285714286%;
+  padding-bottom: 4.85714285714286%;
+  overflow: hidden;
+  }
+.d3-upper {
+    position: relative; /* Positioning context for the SVG */
+    display: flex; /* Flexbox to align child elements */
+    justify-content: flex-end; /* Align SVG to the right */
+    align-items: flex-end; /* Align SVG to the bottom */
+    width: 100%; /* Ensure full width */
+    height: 100px; /* Or any height you need */
+}
+
+.d3-upper svg {
+    position: absolute; /* Keep it in place using absolute positioning */
+    right: 0; /* Align to the right */
+    bottom: -1px; /* Adjust vertical positioning */
+    width: 368px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 368px; /* Prevent the SVG from growing too large */
+}
+@media (max-width: 480px) {
+  .d3-upper svg {
+      width: 150px; /* Smaller width on very small screens */
+      max-width: 250px; /* Cap the maximum width */
+  }
+}
+
+  .d3-files{
+ width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .d3-files img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px !important;
+  }
+
+ 
+
