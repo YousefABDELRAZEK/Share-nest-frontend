@@ -427,6 +427,30 @@ font-size: 3rem;
     height: auto; /* Maintain aspect ratio */
     max-width: 368px; /* Prevent the SVG from growing too large */
 }
+/* From Uiverse.io by Custyyyy */ 
+#bottone1 {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #2b0e44;
+  border: none;
+  font-family: inherit;
+  color: #fcfcfc;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+ }
+ 
+ #bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #ff7d33;
+ }
+ 
+ #bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #ff7d33;
+ }
 @media (max-width: 480px) {
   .d3-upper svg {
       width: 150px; /* Smaller width on very small screens */
@@ -457,7 +481,7 @@ font-size: 3rem;
     align-items: center !important;
     text-align: center !important;
    
-    min-height: 60rem; /* Replace padding with a fixed minimum height */
+    min-height: 40rem; /* Replace padding with a fixed minimum height */
     margin: 7rem auto;
    
     background-repeat: repeat;
@@ -559,17 +583,17 @@ padding: 5rem;
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important; /* Ensure space between text and image */
-  margin-top: 120px;
-  width: 80%;
+  margin-top: 150px !important;
+  width: 100%;
   margin: 120px auto;
 }
 
 .d5-left {
-  width: 50%; /* Adjust width for the left side text */
+  width: 100%; /* Adjust width for the left side text */
 }
 
 .d5-right {
-  width: 50%;
+  width: 100%;
   height: auto; /* Adjust width for the right side image */
   display: flex;
   justify-content: flex-end; /* Align image to the right */
@@ -577,10 +601,32 @@ padding: 5rem;
 
 .d5-right img {
   height: auto;
-  width: 70%;
+  width: 100%;
   margin-left: 20px; /* Add gap between image and text */
 }
-
+#bottone2 {
+  padding-left: 33px;
+  padding-right: 33px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-radius: 9px;
+  background: #ff7d33;
+  border: none;
+  font-family: inherit;
+  color: #fcfcfc;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+ }
+ 
+ #bottone2:hover {
+  box-shadow: 7px 5px 56px -14px #4B0082;
+ }
+ 
+ #bottone2:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #4B0082;
+ }
 
 @media (max-width: 768px) {
   .d5 {
