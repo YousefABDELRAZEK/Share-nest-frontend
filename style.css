@@ -447,6 +447,103 @@ font-size: 3rem;
     height: auto;
     border-radius: 10px !important;
   }
+  .d4 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+   
+    min-height: 60rem; /* Replace padding with a fixed minimum height */
+    margin: 6rem auto;
+   
+    background-repeat: repeat;
+    background-size: 35.00px auto;
+    background-image: url(pattern.svg);
+   
+    border: 0;
+    border-radius: 16px;
+    mask: radial-gradient(61.6% 70%, rgb(0, 0, 0) 50.9033%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+}
 
+.d4 h1 {
+    color: #2b0e44;
+    font-size: 4rem;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    max-width: 100%;
+    
+}
+.d4 img{
+  width: 60%;
+  height: auto;
+}
+.d4-img{
+  height: auto;
+  width: 100%;
+  margin: 2px auto;
+}
+.d4-content{
+padding: 5rem;
+}
+
+/* Media query for screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+  .d4 {
+      padding: 6rem;
+  }
+  .d4 h1 {
+      font-size: 3.5rem;
+    
+  }
+}
+
+/* Media query for screens smaller than 992px */
+@media screen and (max-width: 992px) {
+  .d4 {
+      padding: 9rem;
+  }
+  .d4 h1 {
+      font-size: 3.5rem;
+      white-space: wrap;
+  }
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .d4 {
+      padding: 6rem;
+  }
+  .d4 h1 {
+      font-size: 4rem;
+      white-space: wrap;
+  }
+}
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  .d4 {
+      padding: 2rem;
+  }
+  .d4 h1 {
+      font-size: 3rem;
+      white-space: wrap;
+  }
+}
+  
  
 
+.d5{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+ 
+}
