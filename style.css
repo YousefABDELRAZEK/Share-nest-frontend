@@ -81,11 +81,11 @@ font-weight: 500 !important;
     align-items: center !important;
     text-align: center !important;
   margin-top: 100px;
-
-
-
-
+  position: relative;
   }
+
+
+
   .d1 h1{
     font-size: 4rem !important;
     font-weight: 800;
@@ -118,7 +118,7 @@ color: #4B0082;
     border-radius: 50%;
     filter: blur(115px);
     z-index: -1;
-    top: 40%; 
+    top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
   }
@@ -130,7 +130,7 @@ color: #4B0082;
     border-radius: 50%;
     filter: blur(115px);
     z-index: -1;
-    top: 40%; 
+    top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
   }
@@ -656,3 +656,45 @@ padding: 5rem;
   }
 }
 
+.d6{
+  display: flex !important;
+  flex-direction: column!important;
+  justify-content: center !important; /* Ensure space between text and image */
+  margin-top: 150px !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100%;
+  margin: 120px auto;
+}
+.d6-comment h2{
+  color: #2b0e44;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+}
+.d7{
+  display: flex !important;
+  flex-direction: column!important;
+  justify-content: center !important; /* Ensure space between text and image */
+  margin-top: 150px !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100%;
+  margin: 120px auto;
+}
+.d7-1,.d7-2{
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px !important;
+  padding: 20px;
+
+}
+.d7-1 div,.d7-2 div{
+  border: 2px solid black;
+  display: flex !important;
+  flex-direction: column!important;
+  justify-content: center !important;
+}
+.d7-1-1{
+  flex: 3;
+}
