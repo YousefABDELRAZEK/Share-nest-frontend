@@ -456,7 +456,7 @@ font-size: 3rem;
     margin: 0px auto;
 
   }
-  .d3-container{
+  .d3-container,.d7-container{
     padding: 0 64px;
   margin: 0 auto;
   max-width: 1248px;
@@ -470,7 +470,7 @@ font-size: 3rem;
     justify-content: flex-end; /* Align SVG to the right */
     align-items: flex-end; /* Align SVG to the bottom */
     width: 100%; /* Ensure full width */
-    height: auto; /* Or any height you need */
+    height: 100px; /* Or any height you need */
     margin-top: 5rem !important;
 }
 
@@ -728,47 +728,89 @@ padding: 5rem;
   font-weight: 700;
 
 }
-.d7{
+.d7 {
   display: flex !important;
-  flex-direction: column!important;
-  justify-content: center !important; /* Ensure space between text and image */
+  flex-direction: column !important;
+  justify-content: center !important;
   margin-top: 150px !important;
   align-items: center !important;
   text-align: center !important;
   width: 100%;
   margin: 120px auto;
 }
+
 .bento-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
   gap: 16px;
   width: 100%;
-  height: 800px;
+  height: auto;
 }
 
 .grid-item {
+  margin: 0.5rem;
   display: flex;
-  align-items: center;
+  padding: 1.5rem;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
+  border-radius: 20px;
+  flex-direction: column;
+  background: rgba(252, 252, 253, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(252, 252, 253, 0.3);
 }
 
-.top-left {
-  background-color: #3B82F6;
+.top-left h4, .top-left p {
+  text-align: left;
 }
 
-.top-right {
-  background-color: #10B981;
+.img-div {
+  width: 100%;
+  margin: 0px auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img-div img {
+  width: 100%;
+  height: auto;
+  left: 0;
+  position: relative;
+  border-radius: 20px;
+}
+
+.top-right h4, .top-right p {
+  text-align: left;
 }
 
 .bottom-left {
-  background-color: #EF4444;
   grid-column: span 1;
 }
 
 .bottom-right {
-  background-color: #8B5CF6;
   grid-column: span 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .bento-grid {
+     grid-template-columns: 1fr; /* Stack items vertically */
+     grid-template-rows: auto; /* Let rows adjust automatically */
+  }
+  
+  .bottom-left, .bottom-right {
+     grid-column: span 1; /* Ensure full width */
+  }
+  
+  .d7 {
+     margin-top: 50px !important; /* Reduce top margin on smaller screens */
+     margin: 50px auto; /* Adjust overall margin */
+  }
 }
