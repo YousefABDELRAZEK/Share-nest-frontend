@@ -982,123 +982,94 @@ z-index: -1;
   transform: rotate(45deg); /* Rotate the toggle icon */
 }
 
-/* Footer Container */
 .footer {
   position: relative;
-  background: #111; /* Dark background */
+  background: #2b0e44;
   color: #fff;
   text-align: center;
-  padding: 10rem;
-  overflow: hidden; /* Hide overflow for shapes */
-  border-radius: 20px;
-margin-bottom: 20px;
+  padding: 4rem 2rem; 
+  overflow: hidden;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  margin: 0px auto;
+  max-width: 150%; /* Max width but still centering */
+  box-sizing: border-box;
 }
-.d10{
-
-    display: flex;
-    flex-direction: column;
-    gap: 100px; /* Adds spacing between child elements */
-  }
-  
 
 
-/* Footer Content */
-.footer-content {
+
+
+.footer-text {
+  border: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   width: 100%;
-  padding: 5rem;
-  margin: 0 auto;
-  /* From https://css.glass */
-background: rgba(255, 255, 255, 0.09);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  height: auto;
+  padding: 2rem; /* Added padding */
 }
 
-.footer-content h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.footer-content p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 2rem;
-  z-index: 2;
-}
-
-.footer-buttons {
+.footer-text h1 {
+  position: relative;
+  font-size: clamp(4rem, 20vw, 20rem); /* Responsive font size */
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  word-break: break-word; /* Prevent overflow on very small screens */
 }
 
-.primary-button {
-  background: #ff007a;
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.primary-button:hover {
-  background: #e6006b;
-}
-
-.secondary-button {
-  background: #fff;
-  color: #111;
-  font-size: 1rem;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.secondary-button:hover {
-  background: #f3f3f3;
-}
-
-/* Footer Bottom */
 .footer-bottom {
-  margin-top: 3rem;
+  position: absolute; /* Position relative to the .footer container */
+  bottom: 0; /* Stick to the bottom of the container */
+  left: 2rem; /* Align to the left with some padding */
   font-size: 0.9rem;
-  color: #666;
+  color: #b4b4b4;
   display: flex;
-  justify-content: center;
-
   gap: 1rem;
+  padding: 10px;
 }
 
-/* Gradient Shapes */
-.footer::before,
-.footer::after {
-  content: '';
+/* Responsive adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: 10px;
+    padding: 2rem 1rem;
+
+  }
+
+  .d10 {
+    gap: 1rem;
+  }
+
+  .footer-text {
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .footer-text h1 {
+    font-size: clamp(2rem, 15vw, 10rem);
+  }
+}
+
+/* Ensure text doesn't cause horizontal scrolling */
+@media screen and (max-width: 320px) {
+  .footer-text h1 {
+    font-size: clamp(1.5rem, 12vw, 8rem);
+  }
+}
+  
+.svg-div2{
+  display: flex;
+z-index: -1;
+  position: relative;
+}
+.svg-div2 svg{
   position: absolute;
-  border-radius: 50%;
-  filter: blur(150px);
-  z-index: 0;
+  left: 5%;
+  filter: blur(15px);
 }
-
-.footer::before {
-  width: 400px;
-  height: 400px;
-  background: rgba(255, 0, 122, 0.6);
-  top: -50px;
-  left: -50px;
-}
-
-.footer::after {
-  width: 400px;
-  height: 400px;
-  background: rgba(255, 223, 0, 0.6);
-  bottom: -50px;
-  right: -50px;
-}
-
