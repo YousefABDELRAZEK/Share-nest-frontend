@@ -262,8 +262,107 @@
     <h2>Nestly delivers an exceptional experience, blending speed, security, and reliability. </h2>
   </div>
 </div>
-
+<div class="d9">
+  <h2>Product FAQs</h2>
+  <section class="faq-section">
+ 
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>How do I upload my files to Nestly?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Uploading files to Nestly is simple! Just click the "Upload" button on your dashboard, select the files you want to upload, and they’ll be securely stored in your account.</p>
+        </div>
       </div>
-    
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Can I collaborate with my team using Nestly?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, Nestly is designed for teams of all sizes! You can share files, assign roles, and work together in real time to stay productive and organized.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Is my data secure on Nestly?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Your data security is our priority. Nestly uses advanced encryption protocols to ensure that your files are always protected and accessible only by you and your team.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Does Nestly offer mobile access?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! You can access our app for both iOS and Android, giving you secure access to your files anytime, anywhere.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What happens if I run out of storage space?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>If you run out of storage, you can easily upgrade your plan to get more space for your files. Check out our pricing page for details on available plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+</div>
+<div class="d10">
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <h1>Schedule a demo</h1>
+    <p>Discover how Nestly can streamline your workflows and enhance your team's productivity.</p>
+    <div class="footer-buttons">
+      <button class="primary-button">Discover Nestly with an expert</button>
+      <button class="secondary-button">📅 Watch a Nestly demo</button>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>©2024</span>
+    <span>Terms</span>
+    <span>Contact</span>
+  </div>
+</footer>
+</div>
+      </div>
+    <script>
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const parent = question.parentElement;
+    const answer = parent.querySelector('.faq-answer');
+
+    // Close all other open FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+      if (item !== parent) {
+        item.classList.remove('open');
+        item.querySelector('.faq-answer').style.maxHeight = null; // Reset height
+      }
+    });
+
+    // Toggle the clicked FAQ item
+    parent.classList.toggle('open');
+
+    // Smoothly toggle max-height for the current FAQ answer
+    if (parent.classList.contains('open')) {
+      answer.style.maxHeight = answer.scrollHeight + 'px'; // Set height to content's height
+    } else {
+      answer.style.maxHeight = null; // Reset height to collapse
+    }
+  });
+});
+
+    </script>
 </body>
 </html>
